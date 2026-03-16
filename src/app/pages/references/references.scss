@@ -1,0 +1,76 @@
+section {
+  max-width: 75rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+}
+
+.references-intro {
+  margin: 0.75rem 0 0;
+  color: #475569;
+  max-width: 65ch;
+}
+
+.references-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1rem;
+}
+
+.reference-card {
+  border: 1px solid #cbd5e1;
+  border-radius: 0.85rem;
+  padding: 1.25rem 1.5rem;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.ref-name {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #0f172a;
+}
+
+.ref-title {
+  margin: 0;
+  font-style: italic;
+  color: #334155;
+}
+
+.ref-dept,
+.ref-institution {
+  margin: 0;
+  color: #475569;
+  font-size: 0.9rem;
+}
+
+.ref-institution {
+  margin-bottom: 0.5rem;
+}
+
+.ref-contact {
+  margin: 0;
+
+  a {
+    color: #1d4ed8;
+    text-decoration: none;
+    font-size: 0.9rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:focus-visible {
+      outline: 2px solid #2563eb;
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+  }
+}
+

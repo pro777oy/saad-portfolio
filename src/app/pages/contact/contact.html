@@ -1,0 +1,18 @@
+<section aria-labelledby="contact-heading">
+  <h1 id="contact-heading">Contact</h1>
+  <p>Feel free to reach out through any of the channels below.</p>
+
+  <ul class="contact-list">
+    @for (link of content().links; track link.href) {
+      <li>
+        <a [href]="link.href" target="_blank" rel="noopener noreferrer">{{ link.label }}</a>
+      </li>
+    }
+  </ul>
+
+  <p>
+    Email:
+    <a [href]="'mailto:' + content().email">{{ content().email }}</a>
+  </p>
+</section>
+

@@ -1,0 +1,31 @@
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
+<div class="app-shell">
+  <header class="site-header">
+    <div class="brand">
+      <p class="brand-name">Saad Kabir Uddin</p>
+      <p class="brand-role">Software Engineer</p>
+    </div>
+
+    <nav aria-label="Primary navigation">
+      <ul class="nav-list">
+        @for (item of navItems(); track item.path) {
+          <li>
+            <a
+              [routerLink]="item.path"
+              [routerLinkActive]="'active-link'"
+              [routerLinkActiveOptions]="{ exact: item.path === '/' }"
+            >
+              {{ item.label }}
+            </a>
+          </li>
+        }
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" tabindex="-1" class="main-content">
+    <router-outlet></router-outlet>
+  </main>
+</div>
+

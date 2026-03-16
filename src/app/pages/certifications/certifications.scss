@@ -1,0 +1,63 @@
+section {
+  max-width: 72rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+}
+
+.certification-grid {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+.certification-card {
+  border: 1px solid #cbd5e1;
+  border-radius: 0.85rem;
+  padding: 1rem 1.2rem;
+  background: #ffffff;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.issuer,
+.issued-on,
+p {
+  margin: 0.55rem 0 0;
+  line-height: 1.55;
+  color: #334155;
+}
+
+.issuer {
+  font-weight: 600;
+  color: #1d4ed8;
+}
+
+.credential-link {
+  display: inline-flex;
+  margin-top: 0.75rem;
+  color: #1d4ed8;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.credential-link:hover {
+  text-decoration: underline;
+}
+
+.credential-link:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.empty-state {
+  margin-top: 1rem;
+  color: #475569;
+}
+

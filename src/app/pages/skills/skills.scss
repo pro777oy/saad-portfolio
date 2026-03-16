@@ -1,0 +1,43 @@
+section {
+  max-width: 70rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+}
+
+.skills-summary {
+  margin-top: 0.75rem;
+  color: #334155;
+}
+
+.skills-grid {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+}
+
+.skill-card {
+  border: 1px solid #cbd5e1;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  background: #ffffff;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+ul {
+  margin: 0.85rem 0 0;
+  padding-left: 1.15rem;
+}
+
+li {
+  color: #334155;
+  line-height: 1.6;
+}
+

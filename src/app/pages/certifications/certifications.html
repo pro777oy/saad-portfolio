@@ -1,0 +1,37 @@
+<section aria-labelledby="certifications-heading">
+  <h1 id="certifications-heading">Certifications</h1>
+
+  @if (hasCertifications()) {
+    <div class="certification-grid">
+      @for (certification of certifications(); track certification.name) {
+        <article class="certification-card">
+          <h2>{{ certification.name }}</h2>
+          <p class="issuer">{{ certification.issuer }}</p>
+          <p class="issued-on">Issued: {{ certification.issuedOn }}</p>
+
+          @if (certification.credentialId) {
+            <p><strong>Credential ID:</strong> {{ certification.credentialId }}</p>
+          }
+
+          @if (certification.skills?.length) {
+            <p><strong>Skills:</strong> {{ certification.skills?.join(', ') }}</p>
+          }
+
+          @if (certification.credentialUrl) {
+            <a
+              class="credential-link"
+              [href]="certification.credentialUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Credential
+            </a>
+          }
+        </article>
+      }
+    </div>
+  } @else {
+    <p class="empty-state">No certifications added yet.</p>
+  }
+</section>
+

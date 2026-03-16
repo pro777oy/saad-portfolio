@@ -1,0 +1,29 @@
+<section aria-labelledby="experience-heading">
+  <h1 id="experience-heading">Work Experience</h1>
+
+  <ol class="timeline" aria-label="Work history">
+    @for (job of experience(); track job.company; let jobIndex = $index) {
+      <li class="timeline-item" [attr.aria-labelledby]="'job-title-' + jobIndex">
+        <div class="timeline-marker" aria-hidden="true"></div>
+
+        <div class="job-card">
+          <div class="job-header">
+            <div class="job-info">
+              <h2 [id]="'job-title-' + jobIndex" class="job-role">{{ job.role }}</h2>
+              <p class="job-company">{{ job.company }}</p>
+            </div>
+            <span class="job-period">{{ job.period }}</span>
+          </div>
+
+          <ul class="job-responsibilities">
+            @for (item of job.responsibilities; track item) {
+              <li>{{ item }}</li>
+            }
+          </ul>
+        </div>
+      </li>
+    }
+  </ol>
+
+</section>
+

@@ -1,0 +1,14 @@
+<section class="hero" aria-labelledby="hero-title">
+  <p class="eyebrow">Hello, I am</p>
+  <h1 id="hero-title">{{ profile().name }}</h1>
+  <p class="hero-title">{{ profile().title }}</p>
+  <p class="hero-intro">{{ profile().intro }}</p>
+
+  <div class="hero-actions" aria-label="Primary links">
+	@for (link of socialLinks(); track link.href) {
+	  <a class="button-link" [href]="link.href" target="_blank" rel="noopener noreferrer">{{ link.label }}</a>
+	}
+	<a class="button-link button-link-secondary" routerLink="/projects">View Projects</a>
+  </div>
+</section>
+

@@ -1,0 +1,41 @@
+<section aria-labelledby="research-heading">
+  <h1 id="research-heading">Research</h1>
+
+  <h2>Research Experience</h2>
+  <div class="research-list">
+    @for (entry of content().researchExperience; track entry.title) {
+      <article class="research-card">
+        <h3>{{ entry.title }}</h3>
+        <p class="research-period">{{ entry.period }}</p>
+        <p><strong>Topic:</strong> {{ entry.topic }}</p>
+        <p><strong>Tools and Technologies:</strong> {{ entry.tools.join(', ') }}</p>
+        @if (entry.referenceUrl && entry.referenceLabel) {
+          <p class="research-reference">
+            <a [href]="entry.referenceUrl" target="_blank" rel="noopener noreferrer">
+              {{ entry.referenceLabel }}
+            </a>
+          </p>
+        }
+      </article>
+    }
+  </div>
+
+  <h2>Featured Research</h2>
+  <p>{{ content().featuredResearch }}</p>
+
+  <h2>AI-focused Interests</h2>
+  <p class="research-overview">{{ content().researchInterestsSummary }}</p>
+  <ul>
+    @for (interest of content().researchInterests; track interest) {
+      <li>{{ interest }}</li>
+    }
+  </ul>
+
+  <h2>Future Research Areas</h2>
+  <ul>
+    @for (area of content().futureResearchAreas; track area) {
+      <li>{{ area }}</li>
+    }
+  </ul>
+</section>
+

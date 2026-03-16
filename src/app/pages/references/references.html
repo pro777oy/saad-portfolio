@@ -1,0 +1,26 @@
+<section aria-labelledby="references-heading">
+  <h1 id="references-heading">References</h1>
+  <p class="references-intro">Available upon request. The following individuals can speak to my academic and professional background.</p>
+
+  <div class="references-grid">
+    @for (ref of references(); track ref.email) {
+      <article class="reference-card" [attr.aria-label]="ref.name">
+        <p class="ref-name">{{ ref.name }}</p>
+        <p class="ref-title">{{ ref.title }}</p>
+        <p class="ref-dept">{{ ref.department }}</p>
+        <p class="ref-institution">{{ ref.institution }}</p>
+        <p class="ref-contact">
+          <a [href]="'tel:' + ref.phone" aria-label="Call {{ ref.name }}">
+            <span aria-hidden="true">📞</span> {{ ref.phone }}
+          </a>
+        </p>
+        <p class="ref-contact">
+          <a [href]="'mailto:' + ref.email" aria-label="Email {{ ref.name }}">
+            <span aria-hidden="true">✉️</span> {{ ref.email }}
+          </a>
+        </p>
+      </article>
+    }
+  </div>
+</section>
+

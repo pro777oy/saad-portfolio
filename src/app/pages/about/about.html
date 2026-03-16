@@ -1,0 +1,30 @@
+<section aria-labelledby="about-heading">
+  <h1 id="about-heading">About</h1>
+  <p>{{ content().bio }}</p>
+
+  <h2>Education</h2>
+  <p>{{ content().education.degree }}</p>
+  <p>{{ content().education.specialization }}</p>
+  <p>{{ content().education.institution }}</p>
+  <p>{{ content().education.location }}</p>
+  <p>{{ content().education.period }}</p>
+  <p>CGPA: {{ content().education.cgpa }}</p>
+  <p>GPA in last 60 credits: {{ content().education.last60CreditsGpa }}</p>
+  <ul>
+    @for (achievement of content().education.achievements; track achievement) {
+      <li>{{ achievement }}</li>
+    }
+  </ul>
+  <p><strong>BSc Thesis:</strong> {{ content().education.thesis }}</p>
+
+  <h2>Research Interests</h2>
+  <ul>
+    @for (interest of content().researchInterests; track interest) {
+      <li>{{ interest }}</li>
+    }
+  </ul>
+
+  <h2>Featured Research</h2>
+  <p>{{ content().featuredResearch }}</p>
+</section>
+

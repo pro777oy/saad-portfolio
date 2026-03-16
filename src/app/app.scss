@@ -1,0 +1,96 @@
+:host {
+  display: block;
+  min-height: 100dvh;
+  color: #0f172a;
+  background: #f8fafc;
+}
+
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: -3rem;
+  z-index: 100;
+  padding: 0.65rem 0.9rem;
+  border-radius: 0.5rem;
+  background: #0f172a;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0.75rem;
+}
+
+.app-shell {
+  min-height: 100dvh;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 1rem clamp(1rem, 3vw, 3rem);
+  border-bottom: 1px solid #e2e8f0;
+  background: #ffffff;
+}
+
+.brand-name {
+  margin: 0;
+  font-weight: 700;
+}
+
+.brand-role {
+  margin: 0.25rem 0 0;
+  color: #475569;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.nav-list a {
+  display: inline-flex;
+  min-height: 2.5rem;
+  align-items: center;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.5rem;
+  color: #1e293b;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-list a:hover {
+  background: #e2e8f0;
+}
+
+.nav-list a:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 1px;
+}
+
+.nav-list a.active-link {
+  background: #dbeafe;
+  color: #1e3a8a;
+}
+
+.main-content {
+  width: min(78rem, 100%);
+  margin-inline: auto;
+  padding: clamp(1rem, 3vw, 2.5rem) clamp(1rem, 4vw, 3.5rem) 3rem;
+}
+
+.main-content > * {
+  width: 100%;
+  margin-inline: auto;
+}
+
