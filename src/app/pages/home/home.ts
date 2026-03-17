@@ -3,6 +3,11 @@ import { RouterLink } from '@angular/router';
 
 import { portfolioContent } from '../../portfolio-content';
 
+type HeroHighlight = {
+  readonly label: string;
+  readonly value: string;
+};
+
 @Component({
   selector: 'app-home-page',
   imports: [RouterLink],
@@ -12,6 +17,17 @@ import { portfolioContent } from '../../portfolio-content';
 })
 export class HomePage {
   readonly profile = signal(portfolioContent);
-  readonly socialLinks = computed(() => this.profile().links);
+  readonly highlights = computed<readonly HeroHighlight[]>(() => {
+    const content = this.profile();
+
+    return [
+      { label: 'Projects', value: `${content.projects.length} featured builds` },
+      { label: 'Work Experience', value: `${content.workExperience.length} roles` },
+      {
+        label: 'Research Focus',
+        value: content.researchInterests.slice(0, 2).join(' • '),
+      },
+    ];
+  });
 }
 

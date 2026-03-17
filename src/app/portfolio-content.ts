@@ -75,8 +75,7 @@ export type PortfolioContent = {
 export const portfolioContent: PortfolioContent = {
   name: 'Saad Kabir Uddin',
   title: 'Software Engineer | AI & Computer Vision Enthusiast',
-  intro:
-    'I build maintainable software systems and apply AI research to practical, high-impact products.',
+  intro: 'I build maintainable software systems and apply AI research to practical, impactful products.',
   bio: 'I am a software engineer focused on full-stack web development, scalable systems, and applied AI. I enjoy turning complex requirements into reliable, user-focused products.',
   education: {
     period: 'March 2020 - March 2024',

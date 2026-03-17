@@ -2,28 +2,29 @@
 
 <div class="app-shell">
   <header class="site-header">
-    <div class="brand">
-      <p class="brand-name">Saad Kabir Uddin</p>
-      <p class="brand-role">Software Engineer</p>
+    <div class="site-header-inner">
+      <a class="brand brand-home-link" routerLink="/" aria-label="Go to home page">
+        <span class="brand-name">Saad Kabir Uddin</span>
+        <span class="brand-role">Software Engineer</span>
+      </a>
+
+      <nav aria-label="Primary navigation">
+        <ul class="nav-list">
+          @for (item of navItems(); track item.path) {
+            <li>
+              <a
+                [routerLink]="item.path"
+                [routerLinkActive]="'active-link'"
+                [routerLinkActiveOptions]="{ exact: item.path === '/' }"
+              >
+                {{ item.label }}
+              </a>
+            </li>
+          }
+        </ul>
+      </nav>
     </div>
-
-    <nav aria-label="Primary navigation">
-      <ul class="nav-list">
-        @for (item of navItems(); track item.path) {
-          <li>
-            <a
-              [routerLink]="item.path"
-              [routerLinkActive]="'active-link'"
-              [routerLinkActiveOptions]="{ exact: item.path === '/' }"
-            >
-              {{ item.label }}
-            </a>
-          </li>
-        }
-      </ul>
-    </nav>
   </header>
-
   <main id="main-content" tabindex="-1" class="main-content">
     <router-outlet></router-outlet>
   </main>

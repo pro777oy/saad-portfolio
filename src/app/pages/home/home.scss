@@ -1,4 +1,12 @@
 .hero {
+  max-width: 72rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(16rem, 1fr);
+  gap: clamp(1.25rem, 3vw, 2.25rem);
+  align-items: start;
+}
+
+.hero-content {
   max-width: 54rem;
 }
 
@@ -23,9 +31,24 @@ h1 {
 
 .hero-intro {
   margin: 1rem 0 0;
-  max-width: 65ch;
+  max-width: 72ch;
   line-height: 1.65;
   color: #334155;
+  text-wrap: pretty;
+}
+
+.hero-bio {
+  margin: 0.75rem 0 0;
+  max-width: 72ch;
+  line-height: 1.65;
+  color: #475569;
+}
+
+@media (min-width: 64rem) {
+  .hero-intro {
+    max-width: none;
+    white-space: nowrap;
+  }
 }
 
 .hero-actions {
@@ -64,5 +87,62 @@ h1 {
 
 .button-link-secondary:hover {
   background: #bfdbfe;
+}
+
+.hero-highlights {
+  border: 1px solid #cbd5e1;
+  border-radius: 0.85rem;
+  padding: 1rem;
+  background: #ffffff;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+ul {
+  margin: 0.85rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.75rem;
+}
+
+li {
+  display: grid;
+  gap: 0.2rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.65rem;
+  padding: 0.65rem 0.75rem;
+}
+
+.highlight-label {
+  color: #475569;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 700;
+}
+
+.highlight-value {
+  color: #0f172a;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+@media (max-width: 56rem) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-intro {
+    max-width: 72ch;
+    white-space: normal;
+  }
+
+  .hero-highlights {
+    max-width: 30rem;
+  }
 }
 

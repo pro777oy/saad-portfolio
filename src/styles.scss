@@ -8,6 +8,10 @@ body {
   padding: 0;
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 body {
   font-family: Inter, 'Segoe UI', Roboto, Arial, sans-serif;
   background: #f8fafc;

@@ -21,7 +21,9 @@ describe('App', () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.brand-name')?.textContent).toContain('Saad Kabir Uddin');
-    expect(compiled.querySelectorAll('.nav-list a').length).toBe(9);
+    const brandHomeLink = compiled.querySelector('.brand-home-link') as HTMLAnchorElement | null;
+    expect(brandHomeLink?.textContent).toContain('Saad Kabir Uddin');
+    expect(brandHomeLink?.getAttribute('href')).toBe('/');
+    expect(compiled.querySelectorAll('.nav-list a').length).toBe(8);
   });
 });

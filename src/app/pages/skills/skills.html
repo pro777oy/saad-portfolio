@@ -1,7 +1,5 @@
 <section aria-labelledby="skills-heading">
   <h1 id="skills-heading">Skills</h1>
-  <p class="skills-summary">{{ totalSkills() }} core skills grouped by category.</p>
-
   <div class="skills-grid">
     @for (category of categories(); track category.name; let categoryIndex = $index) {
       <article class="skill-card" [attr.aria-labelledby]="'skill-category-' + categoryIndex">
