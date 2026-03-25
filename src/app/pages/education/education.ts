@@ -3,12 +3,11 @@ import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { portfolioContent } from '../../portfolio-content';
 
 @Component({
-  selector: 'app-about-page',
-  templateUrl: './about.html',
-  styleUrl: './about.scss',
+  selector: 'app-education-page',
+  templateUrl: './education.html',
+  styleUrl: './education.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class AboutPage {
+export class EducationPage {
   protected readonly content = signal(portfolioContent);
 }
-

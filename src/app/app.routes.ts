@@ -7,9 +7,9 @@ export const routes: Routes = [
 	loadComponent: () => import('./pages/home/home').then((m) => m.HomePage)
   },
   {
-	path: 'about',
-	title: 'About | Saad Kabir Uddin',
-	loadComponent: () => import('./pages/about/about').then((m) => m.AboutPage)
+	path: 'education',
+	title: 'Education | Saad Kabir Uddin',
+	loadComponent: () => import('./pages/education/education').then((m) => m.EducationPage)
   },
   {
 	path: 'experience',

@@ -15,7 +15,7 @@ type NavItem = {
 })
 export class App {
   readonly navItems = signal<readonly NavItem[]>([
-    { label: 'About', path: '/about' },
+    { label: 'Education', path: '/education' },
     { label: 'Experience', path: '/experience' },
     { label: 'Skills', path: '/skills' },
     { label: 'Certifications', path: '/certifications' },
