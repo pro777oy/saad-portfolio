@@ -1,14 +1,14 @@
 <section aria-labelledby="skills-heading">
-  <h1 id="skills-heading">Skills</h1>
+  <h1 id="skills-heading" class="page-title">Skills</h1>
   <div class="skills-grid">
     @for (category of categories(); track category.name; let categoryIndex = $index) {
       <article class="skill-card" [attr.aria-labelledby]="'skill-category-' + categoryIndex">
-        <h2 [id]="'skill-category-' + categoryIndex">{{ category.name }}</h2>
-        <ul>
+        <h2 [id]="'skill-category-' + categoryIndex" class="skill-category-title">{{ category.name }}</h2>
+        <div class="skill-tags" role="list">
           @for (skill of category.items; track skill) {
-            <li>{{ skill }}</li>
+            <span class="skill-tag" role="listitem">{{ skill }}</span>
           }
-        </ul>
+        </div>
       </article>
     }
   </div>

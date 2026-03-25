@@ -1,20 +1,24 @@
 <section aria-labelledby="certifications-heading">
-  <h1 id="certifications-heading">Certifications</h1>
+  <h1 id="certifications-heading" class="page-title">Certifications</h1>
 
   @if (hasCertifications()) {
     <div class="certification-grid">
       @for (certification of certifications(); track certification.name) {
         <article class="certification-card">
-          <h2>{{ certification.name }}</h2>
-          <p class="issuer">{{ certification.issuer }}</p>
-          <p class="issued-on">Issued: {{ certification.issuedOn }}</p>
+          <h2 class="cert-name">{{ certification.name }}</h2>
+          <p class="cert-issuer">{{ certification.issuer }}</p>
+          <p class="cert-issued">Issued: {{ certification.issuedOn }}</p>
 
           @if (certification.credentialId) {
-            <p><strong>Credential ID:</strong> {{ certification.credentialId }}</p>
+            <p class="cert-id"><strong>Credential ID:</strong> {{ certification.credentialId }}</p>
           }
 
           @if (certification.skills?.length) {
-            <p><strong>Skills:</strong> {{ certification.skills?.join(', ') }}</p>
+            <div class="cert-skills" aria-label="Skills covered">
+              @for (skill of certification.skills ?? []; track skill) {
+                <span class="cert-skill-tag">{{ skill }}</span>
+              }
+            </div>
           }
 
           @if (certification.credentialUrl) {
@@ -24,7 +28,7 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              View Credential
+              View Credential ↗
             </a>
           }
         </article>

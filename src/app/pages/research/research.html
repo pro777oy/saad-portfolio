@@ -1,41 +1,53 @@
 <section aria-labelledby="research-heading">
-  <h1 id="research-heading">Research</h1>
+  <h1 id="research-heading" class="page-title">Research</h1>
 
-  <h2>Research Experience</h2>
-  <div class="research-list">
-    @for (entry of content().researchExperience; track entry.title) {
-      <article class="research-card">
-        <h3>{{ entry.title }}</h3>
-        <p class="research-period">{{ entry.period }}</p>
-        <p><strong>Topic:</strong> {{ entry.topic }}</p>
-        <p><strong>Tools and Technologies:</strong> {{ entry.tools.join(', ') }}</p>
-        @if (entry.referenceUrl && entry.referenceLabel) {
-          <p class="research-reference">
-            <a [href]="entry.referenceUrl" target="_blank" rel="noopener noreferrer">
-              {{ entry.referenceLabel }}
-            </a>
-          </p>
-        }
-      </article>
-    }
+  <div class="research-block">
+    <h2 class="section-label">Research Interests</h2>
+    <p class="research-summary">{{ content().researchInterestsSummary }}</p>
+    <div class="interest-tags" aria-label="Research interest areas">
+      @for (interest of content().researchInterests; track interest) {
+        <span class="interest-tag">{{ interest }}</span>
+      }
+    </div>
   </div>
 
-  <h2>Featured Research</h2>
-  <p>{{ content().featuredResearch }}</p>
+  <div class="research-block">
+    <h2 class="section-label">Research Experience</h2>
+    <div class="research-list">
+      @for (entry of content().researchExperience; track entry.title) {
+        <article class="research-card">
+          <div class="research-card-header">
+            <div>
+              <h3 class="research-card-title">{{ entry.title }}</h3>
+              <p class="research-card-period">{{ entry.period }}</p>
+            </div>
+          </div>
+          <p class="research-card-topic"><strong>Topic:</strong> {{ entry.topic }}</p>
+          <div class="research-tools-wrap">
+            <span class="tools-label">Tools &amp; Technologies</span>
+            <div class="tech-tags">
+              @for (tool of entry.tools; track tool) {
+                <span class="tech-tag">{{ tool }}</span>
+              }
+            </div>
+          </div>
+          @if (entry.referenceUrl && entry.referenceLabel) {
+            <a class="research-link" [href]="entry.referenceUrl" target="_blank" rel="noopener noreferrer">
+              {{ entry.referenceLabel }} ↗
+            </a>
+          }
+        </article>
+      }
+    </div>
+  </div>
 
-  <h2>AI-focused Interests</h2>
-  <p class="research-overview">{{ content().researchInterestsSummary }}</p>
-  <ul>
-    @for (interest of content().researchInterests; track interest) {
-      <li>{{ interest }}</li>
-    }
-  </ul>
-
-  <h2>Future Research Areas</h2>
-  <ul>
-    @for (area of content().futureResearchAreas; track area) {
-      <li>{{ area }}</li>
-    }
-  </ul>
+  <div class="research-block">
+    <h2 class="section-label">Future Research Areas</h2>
+    <div class="interest-tags">
+      @for (area of content().futureResearchAreas; track area) {
+        <span class="interest-tag future-tag">{{ area }}</span>
+      }
+    </div>
+  </div>
 </section>
 

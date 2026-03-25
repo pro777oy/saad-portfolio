@@ -1,4 +1,40 @@
-* {
+/* ── Design Tokens ─────────────────────────────────────── */
+:root {
+  /* Colors */
+  --color-bg:          #f1f5f9;
+  --color-surface:     #ffffff;
+  --color-surface-2:   #f8fafc;
+  --color-border:      #e2e8f0;
+  --color-border-soft: #f1f5f9;
+
+  --color-text:        #0f172a;
+  --color-text-muted:  #475569;
+  --color-text-subtle: #64748b;
+
+  --color-primary:     #2563eb;
+  --color-primary-bg:  #dbeafe;
+  --color-primary-dark:#1e3a8a;
+  --color-accent:      #0ea5e9;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(15,23,42,.06), 0 1px 2px rgba(15,23,42,.04);
+  --shadow-md: 0 4px 12px rgba(15,23,42,.08), 0 2px 4px rgba(15,23,42,.05);
+  --shadow-lg: 0 10px 30px rgba(15,23,42,.10), 0 4px 8px rgba(15,23,42,.06);
+
+  /* Radii */
+  --radius-sm:  0.5rem;
+  --radius-md:  0.85rem;
+  --radius-lg:  1.25rem;
+  --radius-pill:2rem;
+
+  /* Transitions */
+  --transition: 150ms ease;
+}
+
+/* ── Reset ─────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -10,10 +46,20 @@ body {
 
 html {
   scrollbar-gutter: stable;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: Inter, 'Segoe UI', Roboto, Arial, sans-serif;
-  background: #f8fafc;
-  color: #0f172a;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Focus ring ────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 4px;
 }

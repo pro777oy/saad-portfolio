@@ -1,18 +1,24 @@
 <section aria-labelledby="contact-heading">
-  <h1 id="contact-heading">Contact</h1>
-  <p>Feel free to reach out through any of the channels below.</p>
+  <h1 id="contact-heading" class="page-title">Contact</h1>
+  <p class="contact-intro">Feel free to reach out through any of the channels below.</p>
 
-  <ul class="contact-list">
+  <div class="contact-cards">
     @for (link of content().links; track link.href) {
-      <li>
-        <a [href]="link.href" target="_blank" rel="noopener noreferrer">{{ link.label }}</a>
-      </li>
+      <a class="contact-card" [href]="link.href" target="_blank" rel="noopener noreferrer">
+        <div class="contact-card-content">
+          <span class="contact-card-label">{{ link.label }}</span>
+          <span class="contact-card-url">{{ link.href }}</span>
+        </div>
+        <span class="contact-card-arrow" aria-hidden="true">↗</span>
+      </a>
     }
-  </ul>
-
-  <p>
-    Email:
-    <a [href]="'mailto:' + content().email">{{ content().email }}</a>
-  </p>
+    <a class="contact-card" [href]="'mailto:' + content().email">
+      <div class="contact-card-content">
+        <span class="contact-card-label">Email</span>
+        <span class="contact-card-url">{{ content().email }}</span>
+      </div>
+      <span class="contact-card-arrow" aria-hidden="true">↗</span>
+    </a>
+  </div>
 </section>
 

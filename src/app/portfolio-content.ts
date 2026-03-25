@@ -273,7 +273,6 @@ export const portfolioContent: PortfolioContent = {
   links: [
     { label: 'GitHub', href: 'https://github.com/pro777oy' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/saadkabiruddin/' },
-    { label: 'Email', href: 'mailto:uddin.saadkabir@gmail.com' },
   ],
   email: 'uddin.saadkabir@gmail.com',
 };

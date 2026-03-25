@@ -1,5 +1,5 @@
 <section aria-labelledby="references-heading">
-  <h1 id="references-heading">References</h1>
+  <h1 id="references-heading" class="page-title">References</h1>
   <p class="references-intro">Available upon request. The following individuals can speak to my academic and professional background.</p>
 
   <div class="references-grid">
@@ -10,12 +10,12 @@
         <p class="ref-dept">{{ ref.department }}</p>
         <p class="ref-institution">{{ ref.institution }}</p>
         <p class="ref-contact">
-          <a [href]="'tel:' + ref.phone" aria-label="Call {{ ref.name }}">
+          <a [href]="'tel:' + ref.phone" [attr.aria-label]="'Call ' + ref.name">
             <span aria-hidden="true">📞</span> {{ ref.phone }}
           </a>
         </p>
         <p class="ref-contact">
-          <a [href]="'mailto:' + ref.email" aria-label="Email {{ ref.name }}">
+          <a [href]="'mailto:' + ref.email" [attr.aria-label]="'Email ' + ref.name">
             <span aria-hidden="true">✉️</span> {{ ref.email }}
           </a>
         </p>

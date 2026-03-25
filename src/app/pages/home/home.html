@@ -1,15 +1,25 @@
 <section class="hero" aria-labelledby="hero-title">
   <div class="hero-content">
-    <p class="eyebrow">Hello, I am</p>
+    <p class="eyebrow">Hello, I'm</p>
     <h1 id="hero-title">{{ profile().name }}</h1>
-    <p class="hero-title">{{ profile().title }}</p>
+    <p class="hero-role">{{ profile().title }}</p>
     <p class="hero-intro">{{ profile().intro }}</p>
     <p class="hero-bio">{{ profile().bio }}</p>
 
-    <div class="hero-actions" aria-label="Home quick actions">
-      <a class="button-link" routerLink="/projects">View Projects</a>
-      <a class="button-link button-link-secondary" routerLink="/experience">Work Experience</a>
+    <div class="hero-actions" aria-label="Quick navigation">
+      <a class="btn btn-primary" routerLink="/projects">View Projects</a>
+      <a class="btn btn-secondary" routerLink="/experience">Work Experience</a>
+      <a class="btn btn-ghost" routerLink="/about">About Me</a>
     </div>
+  </div>
+
+  <div class="hero-stats" aria-label="Quick stats">
+    @for (item of highlights(); track item.label) {
+      <div class="stat-card">
+        <span class="stat-label">{{ item.label }}</span>
+        <span class="stat-value">{{ item.value }}</span>
+      </div>
+    }
   </div>
 </section>
 

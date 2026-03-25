@@ -1,30 +1,33 @@
 <section aria-labelledby="about-heading">
-  <h1 id="about-heading">About</h1>
-  <p>{{ content().bio }}</p>
+  <h1 id="about-heading" class="page-title">About</h1>
+  <p class="bio-text">{{ content().bio }}</p>
 
-  <h2>Education</h2>
-  <p>{{ content().education.degree }}</p>
-  <p>{{ content().education.specialization }}</p>
-  <p>{{ content().education.institution }}</p>
-  <p>{{ content().education.location }}</p>
-  <p>{{ content().education.period }}</p>
-  <p>CGPA: {{ content().education.cgpa }}</p>
-  <p>GPA in last 60 credits: {{ content().education.last60CreditsGpa }}</p>
-  <ul>
-    @for (achievement of content().education.achievements; track achievement) {
-      <li>{{ achievement }}</li>
-    }
-  </ul>
-  <p><strong>BSc Thesis:</strong> {{ content().education.thesis }}</p>
-
-  <h2>Research Interests</h2>
-  <ul>
-    @for (interest of content().researchInterests; track interest) {
-      <li>{{ interest }}</li>
-    }
-  </ul>
-
-  <h2>Featured Research</h2>
-  <p>{{ content().featuredResearch }}</p>
+  <div class="about-card">
+    <h2 class="card-section-title">Education</h2>
+    <div class="edu-header">
+      <div>
+        <p class="edu-degree">{{ content().education.degree }}</p>
+        <p class="edu-spec">{{ content().education.specialization }}</p>
+        <p class="edu-institution">{{ content().education.institution }}, {{ content().education.location }}</p>
+      </div>
+      <span class="edu-period">{{ content().education.period }}</span>
+    </div>
+    <div class="edu-stats">
+      <div class="edu-stat">
+        <span class="edu-stat-label">CGPA</span>
+        <span class="edu-stat-value">{{ content().education.cgpa }}</span>
+      </div>
+      <div class="edu-stat">
+        <span class="edu-stat-label">Last 60 Credits GPA</span>
+        <span class="edu-stat-value">{{ content().education.last60CreditsGpa }}</span>
+      </div>
+    </div>
+    <ul class="achievements-list">
+      @for (achievement of content().education.achievements; track achievement) {
+        <li>{{ achievement }}</li>
+      }
+    </ul>
+    <p class="thesis-text"><strong>BSc Thesis:</strong> {{ content().education.thesis }}</p>
+  </div>
 </section>
 
