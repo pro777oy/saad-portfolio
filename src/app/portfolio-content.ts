@@ -105,7 +105,7 @@ export const portfolioContent: PortfolioContent = {
       title: 'Undergraduate Research Assistant, Universiti Teknologi Malaysia',
       period: 'September 2022 – September 2023',
       topic:
-        'Improving the Methods of Iris Recognition in Less Cooperative Environments, focused on biometric reliability in non-cooperative conditions.',
+        'Improving the Methods of Iris Recognition in Less Cooperative Environments',
       tools: ['Python', 'PyTorch', 'OpenCV', 'scikit-learn', 'Albumentations', 'Matplotlib'],
       highlights: [
         'Worked on a research project titled "Improving the Methods of Iris Recognition in Less Cooperative Environments".',
@@ -169,8 +169,8 @@ export const portfolioContent: PortfolioContent = {
     {
       title: 'Thalassemia Prediction with Machine Learning',
       description:
-        'A personal research notebook exploring predictive modeling for thalassemia with a practical ML workflow.',
-      technologies: ['Python', 'PyTorch', 'scikit-learn', 'Matplotlib'],
+        'Developed a machine learning model to predict thalassemia risk based on clinical and diagnostic features, following an end-to-end ML workflow.',
+      technologies: ['Python', 'PyTorch', 'scikit-learn', 'Matplotlib', 'Pandas', 'NumPy'],
       features: [
         'Data preprocessing and feature preparation workflow',
         'Model experimentation and comparison',
