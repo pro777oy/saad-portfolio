@@ -50,12 +50,41 @@ section {
   color: var(--color-primary);
 }
 
+.contact-card:hover .contact-card-icon .icon {
+  color: var(--color-primary);
+}
+
+/* ── Card Icon ────────────────────────────────────────────── */
+.contact-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--radius-sm);
+  background: var(--color-background);
+  transition: background var(--transition), color var(--transition);
+}
+
+.contact-card:hover .contact-card-icon {
+  background: var(--color-primary-bg);
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: currentColor;
+  transition: color var(--transition);
+}
+
 /* ── Card inner ───────────────────────────────────────────── */
 .contact-card-content {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
   min-width: 0;
+  flex: 1;
 }
 
 .contact-card-label {
