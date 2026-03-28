@@ -154,12 +154,7 @@ export const portfolioContent: PortfolioContent = {
       title: 'Deep Learning with PyTorch Image Segmentation',
       description:
         'Developed a semantic segmentation pipeline using U-Net with an EfficientNet-B0 encoder for accurate pixel-wise classification.',
-      technologies: [
-        'Python',
-        'PyTorch',
-        'Albumentations',
-        'OpenCV',
-      ],
+      technologies: ['Python', 'PyTorch', 'Albumentations', 'OpenCV'],
       features: [
         'Set up GPU runtime and trained for 25 epochs',
         'Custom dataset and dataloader pipeline for masks/images',
@@ -189,9 +184,12 @@ export const portfolioContent: PortfolioContent = {
     {
       title: 'Task Management Tool',
       description:
-        'A collaborative team workspace for planning, assigning, and monitoring software tasks. Developed as my first Angular project to explore component-based UI development.',
+        'Developed a collaborative web application for planning, assigning, and tracking software development tasks, built to explore component-based architecture using Angular.',
       technologies: ['Angular'],
-      features: ['Task tracking', 'Team collaboration', 'Status monitoring'],
+      features: [
+        'Implemented task creation, assignment, and tracking functionality',
+        'Enabled team collaboration through shared task visibility',
+      ],
 
       projectLink: {
         label: 'Project Link',

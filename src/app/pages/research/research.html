@@ -3,11 +3,13 @@
 
   <div class="research-block">
     <h2 class="section-label">Research Interests</h2>
-    <p class="research-summary">{{ content().researchInterestsSummary }}</p>
-    <div class="interest-tags" aria-label="Research interest areas">
-      @for (interest of content().researchInterests; track interest) {
-        <span class="interest-tag">{{ interest }}</span>
-      }
+    <div class="research-interest-box">
+      <p class="research-summary">{{ content().researchInterestsSummary }}</p>
+      <div class="interest-tags" aria-label="Research interest areas">
+        @for (interest of content().researchInterests; track interest) {
+          <span class="interest-tag">{{ interest }}</span>
+        }
+      </div>
     </div>
   </div>
 
