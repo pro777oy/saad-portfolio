@@ -40,6 +40,7 @@ export type ResearchExperience = {
   readonly period: string;
   readonly topic: string;
   readonly tools: readonly string[];
+  readonly highlights?: readonly string[];
   readonly referenceLabel?: string;
   readonly referenceUrl?: string;
 };
@@ -101,18 +102,17 @@ export const portfolioContent: PortfolioContent = {
   featuredResearch: 'Improving the Methods of Iris Recognition in Less Cooperative Environments',
   researchExperience: [
     {
-      title: 'Iris Recognition Research Project',
-      period: 'September 2022 - September 2023',
+      title: 'Undergraduate Research Assistant, Universiti Teknologi Malaysia',
+      period: 'September 2022 – September 2023',
       topic:
-        'Improving the Methods of Iris Recognition in Less Cooperative Environments, focused on image segmentation and biometric recognition reliability.',
-      tools: [
-        'Python',
-        'PyTorch',
-        'OpenCV',
-        'scikit-learn',
-        'Albumentations',
-        'Matplotlib',
-        'Kaggle',
+        'Improving the Methods of Iris Recognition in Less Cooperative Environments, focused on biometric reliability in non-cooperative conditions.',
+      tools: ['Python', 'PyTorch', 'OpenCV', 'scikit-learn', 'Albumentations', 'Matplotlib'],
+      highlights: [
+        'Worked on a research project titled "Improving the Methods of Iris Recognition in Less Cooperative Environments".',
+        'Assisted in research on iris recognition under non-cooperative conditions such as blur, occlusion, and illumination variation.',
+        'Conducted literature review on biometric recognition and computer vision techniques.',
+        'Worked with iris image datasets and implemented preprocessing and segmentation experiments.',
+        'Analysed experimental results to evaluate performance of iris recognition approaches.',
       ],
     },
   ],
@@ -146,26 +146,19 @@ export const portfolioContent: PortfolioContent = {
     },
     {
       name: 'Soft Skills',
-      items: [
-        'Analytical and problem-solving skills',
-        'Teamwork',
-        'Attention to detail',
-        'Time management',
-      ],
+      items: ['Problem Solving Skills', 'Teamwork', 'Attention to detail', 'Time management'],
     },
   ],
   projects: [
     {
       title: 'Deep Learning with PyTorch Image Segmentation',
       description:
-        'A Colab-based semantic segmentation project using U-Net with an EfficientNet-B0 encoder and Albumentations pipeline.',
+        'Developed a semantic segmentation pipeline using U-Net with an EfficientNet-B0 encoder for accurate pixel-wise classification.',
       technologies: [
         'Python',
         'PyTorch',
-        'segmentation-models-pytorch',
         'Albumentations',
         'OpenCV',
-        'Google Colab',
       ],
       features: [
         'Set up GPU runtime and trained for 25 epochs',
@@ -182,7 +175,7 @@ export const portfolioContent: PortfolioContent = {
       title: 'Thalassemia Prediction with Machine Learning',
       description:
         'A personal research notebook exploring predictive modeling for thalassemia with a practical ML workflow.',
-      technologies: ['Python', 'PyTorch', 'scikit-learn', 'Matplotlib', 'Google Colab'],
+      technologies: ['Python', 'PyTorch', 'scikit-learn', 'Matplotlib'],
       features: [
         'Data preprocessing and feature preparation workflow',
         'Model experimentation and comparison',
@@ -252,25 +245,8 @@ export const portfolioContent: PortfolioContent = {
         'Worked with backend API endpoints and ensured data could be viewed on the frontend.',
       ],
     },
-    {
-      company: 'Universiti Teknologi Malaysia',
-      role: 'Undergraduate Research Assistant',
-      period: 'September 2022 – September 2023',
-      responsibilities: [
-        'Worked on a research project titled "Improving the Methods of Iris Recognition in Less Cooperative Environments".',
-        'Assisted in research on iris recognition under non-cooperative conditions such as blur, occlusion, and illumination variation.',
-        'Conducted literature review on biometric recognition and computer vision techniques.',
-        'Worked with iris image datasets and implemented preprocessing and segmentation experiments.',
-        'Analysed experimental results to evaluate performance of iris recognition approaches.',
-      ],
-    },
   ],
-  futureResearchAreas: [
-    'Computer Vision',
-    'Deep Learning',
-    'Multimodal AI',
-    'Distributed AI Systems',
-  ],
+  futureResearchAreas: ['Computer Vision', 'Deep Learning', 'Distributed AI Systems'],
   links: [
     { label: 'GitHub', href: 'https://github.com/pro777oy' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/saadkabiruddin/' },

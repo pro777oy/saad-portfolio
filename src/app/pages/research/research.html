@@ -23,6 +23,13 @@
             </div>
           </div>
           <p class="research-card-topic"><strong>Topic:</strong> {{ entry.topic }}</p>
+          @if (entry.highlights?.length) {
+            <ul class="research-highlights" aria-label="Research responsibilities">
+              @for (highlight of entry.highlights; track highlight) {
+                <li>{{ highlight }}</li>
+              }
+            </ul>
+          }
           <div class="research-tools-wrap">
             <span class="tools-label">Tools &amp; Technologies</span>
             <div class="tech-tags">
