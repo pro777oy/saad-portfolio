@@ -234,7 +234,7 @@ export const portfolioContent: PortfolioContent = {
       period: 'September 2023 – February 2024',
       responsibilities: [
         'Worked extensively with PostgreSQL for database querying, manipulation, and management within an ERP system.',
-        'Managed AWS server — updating or restarting server when necessary.',
+        'Managed AWS server, updating or restarting server when necessary.',
         'Documented reasons for bad server performance or slowness issues.',
         'Used DBeaver for database administration tasks and Git Bash for data fixing.',
         'Collaborated with cross-functional teams to troubleshoot database-related issues, ensuring uninterrupted ERP functionality.',
