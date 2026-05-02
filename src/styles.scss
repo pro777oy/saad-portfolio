@@ -1,5 +1,9 @@
 /* ── Design Tokens ─────────────────────────────────────── */
 :root {
+  --layout-max-width: 82rem;
+  --layout-gutter: clamp(1rem, 4vw, 3rem);
+  --layout-gutter-mobile: clamp(0.9rem, 5vw, 1.2rem);
+
   /* Colors */
   --color-bg:          #f1f5f9;
   --color-surface:     #ffffff;
@@ -55,6 +59,11 @@ body {
   color: var(--color-text);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+}
+
+img,
+svg {
+  max-width: 100%;
 }
 
 /* ── Focus ring ────────────────────────────────────────── */

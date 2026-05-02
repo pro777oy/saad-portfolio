@@ -1,5 +1,6 @@
 section {
-  max-width: 72rem;
+  width: 100%;
+  min-width: 0;
 }
 
 .page-title {
@@ -84,6 +85,12 @@ section {
       text-decoration: underline;
       color: var(--color-primary-dark);
     }
+  }
+}
+
+@media (max-width: 40rem) {
+  .reference-card {
+    padding: 1.2rem;
   }
 }
 

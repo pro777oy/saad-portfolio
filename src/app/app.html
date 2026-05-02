@@ -3,12 +3,35 @@
 <div class="app-shell">
   <header class="site-header">
     <div class="site-header-inner">
-      <a class="brand brand-home-link" routerLink="/" aria-label="Go to home page">
-        <span class="brand-name">Saad Kabir Uddin</span>
-        <span class="brand-role">Software Engineer</span>
-      </a>
+      <div class="site-header-top">
+        <a class="brand brand-home-link" routerLink="/" aria-label="Go to home page" (click)="closeMenu()">
+          <span class="brand-name">Saad Kabir Uddin</span>
+          <span class="brand-role">Software Engineer</span>
+        </a>
 
-      <nav aria-label="Primary navigation">
+        <button
+          type="button"
+          class="nav-toggle"
+          [class.is-open]="menuOpen()"
+          [attr.aria-expanded]="menuOpen()"
+          [attr.aria-label]="menuToggleLabel()"
+          aria-controls="primary-navigation"
+          (click)="toggleMenu()"
+        >
+          <span class="sr-only">{{ menuToggleLabel() }}</span>
+          <span class="nav-toggle-icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </button>
+      </div>
+
+      <nav
+        id="primary-navigation"
+        aria-label="Primary navigation"
+        [class.mobile-nav-open]="menuOpen()"
+      >
         <ul class="nav-list">
           @for (item of navItems(); track item.path) {
             <li>
@@ -16,6 +39,7 @@
                 [routerLink]="item.path"
                 [routerLinkActive]="'active-link'"
                 [routerLinkActiveOptions]="{ exact: item.path === '/' }"
+                (click)="closeMenu()"
               >
                 {{ item.label }}
               </a>

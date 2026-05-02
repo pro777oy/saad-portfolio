@@ -1,5 +1,6 @@
 section {
-  max-width: 72rem;
+  width: 100%;
+  min-width: 0;
 }
 
 .page-title {
@@ -64,6 +65,16 @@ section {
   background: var(--color-primary-bg);
   color: var(--color-primary-dark);
   border-color: var(--color-primary-bg);
+}
+
+@media (max-width: 40rem) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card {
+    padding: 1.15rem 1.2rem;
+  }
 }
 
 

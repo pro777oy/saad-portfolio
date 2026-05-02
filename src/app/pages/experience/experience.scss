@@ -1,5 +1,6 @@
 section {
-  max-width: 72rem;
+  width: 100%;
+  min-width: 0;
 }
 
 .page-title {
@@ -118,6 +119,31 @@ section {
     &:last-child {
       margin-bottom: 0;
     }
+  }
+}
+
+@media (max-width: 40rem) {
+  .timeline::before {
+    left: 0.42rem;
+  }
+
+  .timeline-item {
+    padding-left: 1.8rem;
+  }
+
+  .timeline-marker {
+    top: 1rem;
+    width: 1rem;
+    height: 1rem;
+    box-shadow: 0 0 0 3px var(--color-primary-bg);
+  }
+
+  .job-card {
+    padding: 1.2rem;
+  }
+
+  .job-period {
+    white-space: normal;
   }
 }
 

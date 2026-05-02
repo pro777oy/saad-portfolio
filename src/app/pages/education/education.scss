@@ -1,5 +1,6 @@
 section {
-  max-width: 68rem;
+  width: 100%;
+  min-width: 0;
 }
 
 .page-title {
@@ -126,6 +127,21 @@ section {
   color: var(--color-text-muted);
   line-height: 1.65;
   font-size: 0.95rem;
+}
+
+@media (max-width: 40rem) {
+  .about-card {
+    padding: 1.25rem;
+  }
+
+  .edu-period {
+    white-space: normal;
+  }
+
+  .edu-stat {
+    min-width: min(100%, 10rem);
+    flex: 1 1 10rem;
+  }
 }
 
 

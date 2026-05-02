@@ -4,7 +4,7 @@
   grid-template-columns: 1fr;
   gap: 2.5rem;
   padding: clamp(2rem, 6vw, 4rem) 0 clamp(2rem, 4vw, 3rem);
-  max-width: 72rem;
+  width: 100%;
 }
 
 /* ── Content ─────────────────────────────────────────────── */
@@ -147,6 +147,19 @@ h1 {
 }
 
 @media (max-width: 30rem) {
+  .hero {
+    gap: 1.75rem;
+    padding-top: 1rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
   .hero-stats {
     grid-template-columns: 1fr;
   }

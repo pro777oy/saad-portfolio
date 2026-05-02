@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 type NavItem = {
@@ -14,6 +14,7 @@ type NavItem = {
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class App {
+  readonly menuOpen = signal(false);
   readonly navItems = signal<readonly NavItem[]>([
     { label: 'Education', path: '/education' },
     { label: 'Experience', path: '/experience' },
@@ -24,4 +25,16 @@ export class App {
     { label: 'Contact', path: '/contact' },
     { label: 'References', path: '/references' }
   ]);
+
+  readonly menuToggleLabel = computed(() =>
+    this.menuOpen() ? 'Close primary navigation menu' : 'Open primary navigation menu'
+  );
+
+  toggleMenu(): void {
+    this.menuOpen.update((isOpen) => !isOpen);
+  }
+
+  closeMenu(): void {
+    this.menuOpen.set(false);
+  }
 }

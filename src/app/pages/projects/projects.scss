@@ -1,5 +1,6 @@
 section {
-  max-width: 72rem;
+  width: 100%;
+  min-width: 0;
 }
 
 .page-title {
@@ -115,6 +116,13 @@ section {
 .project-link:hover {
   color: var(--color-primary-dark);
   text-decoration: underline;
+}
+
+@media (max-width: 40rem) {
+  .project-card-body,
+  .project-card-footer {
+    padding-inline: 1.2rem;
+  }
 }
 
 

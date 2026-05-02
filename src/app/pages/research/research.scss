@@ -1,5 +1,6 @@
 section {
-  max-width: 72rem;
+  width: 100%;
+  min-width: 0;
 }
 
 .page-title {
@@ -177,6 +178,12 @@ section {
 .research-link:hover {
   color: var(--color-primary-dark);
   text-decoration: underline;
+}
+
+@media (max-width: 40rem) {
+  .research-card {
+    padding: 1.2rem;
+  }
 }
 
 

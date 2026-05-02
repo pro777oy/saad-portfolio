@@ -1,5 +1,6 @@
 section {
-  max-width: 60rem;
+  width: 100%;
+  min-width: 0;
 }
 
 .page-title {
@@ -63,7 +64,7 @@ section {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: var(--radius-sm);
-  background: var(--color-background);
+  background: var(--color-bg);
   transition: background var(--transition), color var(--transition);
 }
 
