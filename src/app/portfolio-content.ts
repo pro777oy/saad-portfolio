@@ -209,7 +209,7 @@ export const portfolioContent: PortfolioContent = {
         "Developed the CMA and deployed it to the organisation's server.",
         'Designed and developed modules for the Core Banking System software.',
         'Developed transactional logic for the CBS.',
-        'Worked on Member Transfer feature.',
+        'Designed and developed Member Transfer module from scratch.',
         'Worked on Cheque Book management feature.',
         'Worked on a reconciliation engine.',
         'Worked on Auth Gateway (Authentication and Authorization).',
