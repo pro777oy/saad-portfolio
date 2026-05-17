@@ -104,8 +104,7 @@ export const portfolioContent: PortfolioContent = {
     {
       title: 'Undergraduate Research Assistant, Universiti Teknologi Malaysia',
       period: 'September 2022 – September 2023',
-      topic:
-        'Improving the Methods of Iris Recognition in Less Cooperative Environments',
+      topic: 'Improving the Methods of Iris Recognition in Less Cooperative Environments',
       tools: ['Python', 'PyTorch', 'OpenCV', 'scikit-learn', 'Albumentations', 'Matplotlib'],
       highlights: [
         'Worked on a research project titled "Improving the Methods of Iris Recognition in Less Cooperative Environments".',
@@ -213,6 +212,7 @@ export const portfolioContent: PortfolioContent = {
         'Worked on Member Transfer feature.',
         'Worked on Cheque Book management feature.',
         'Worked on a reconciliation engine.',
+        'Worked on Auth Gateway (Authentication and Authorization).',
       ],
     },
     {
