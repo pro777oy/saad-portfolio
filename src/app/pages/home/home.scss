@@ -71,12 +71,12 @@ h1 {
 
 .btn-primary {
   background: var(--color-text);
-  color: #fff;
+  color: var(--color-on-strong);
   box-shadow: var(--shadow-sm);
 }
 
 .btn-primary:hover {
-  background: #1e293b;
+  background: var(--color-strong-hover);
   box-shadow: var(--shadow-md);
 }
 
@@ -86,7 +86,7 @@ h1 {
 }
 
 .btn-secondary:hover {
-  background: #bfdbfe;
+  background: var(--color-primary-bg-hover);
 }
 
 .btn-ghost {

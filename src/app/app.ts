@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component, computed, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 type NavItem = {
@@ -14,6 +15,23 @@ type NavItem = {
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class App {
+  private readonly document = inject(DOCUMENT);
+  readonly darkMode = signal(this.document.documentElement.dataset['theme'] === 'dark');
+  readonly themeToggleLabel = computed(() =>
+    this.darkMode() ? 'Switch to light mode' : 'Switch to dark mode'
+  );
+
+  toggleTheme(): void {
+    this.darkMode.update((dark) => !dark);
+    const theme = this.darkMode() ? 'dark' : 'light';
+    this.document.documentElement.dataset['theme'] = theme;
+    try {
+      this.document.defaultView?.localStorage.setItem('portfolio-theme', theme);
+    } catch {
+      // The toggle still works when browser storage is unavailable.
+    }
+  }
+
   readonly menuOpen = signal(false);
   readonly navItems = signal<readonly NavItem[]>([
     { label: 'Education', path: '/education' },

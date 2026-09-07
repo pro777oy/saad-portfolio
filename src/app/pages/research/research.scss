@@ -64,8 +64,8 @@ section {
 }
 
 .future-tag {
-  background: #f0fdf4;
-  color: #166534;
+  background: var(--color-success-bg);
+  color: var(--color-success-text);
 }
 
 /* ── Research Cards ───────────────────────────────────────── */
