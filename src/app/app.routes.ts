@@ -33,7 +33,7 @@ export const routes: Routes = [
   },
   {
 	path: 'research',
-	title: 'Research | Saad Kabir Uddin',
+	title: 'Research & Publications | Saad Kabir Uddin',
 	loadComponent: () => import('./pages/research/research').then((m) => m.ResearchPage)
   },
   {

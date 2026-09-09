@@ -39,7 +39,7 @@ export class App {
     { label: 'Skills', path: '/skills' },
     { label: 'Certifications', path: '/certifications' },
     { label: 'Projects', path: '/projects' },
-    { label: 'Research', path: '/research' },
+    { label: 'Research & Publications', path: '/research' },
     { label: 'Contact', path: '/contact' },
     { label: 'References', path: '/references' }
   ]);

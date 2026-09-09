@@ -1,5 +1,39 @@
 <section aria-labelledby="research-heading">
-  <h1 id="research-heading" class="page-title">Research</h1>
+  <h1 id="research-heading" class="page-title">Research &amp; Publications</h1>
+
+  <div class="research-block">
+    <h2 class="section-label">Publications</h2>
+    <div class="research-list">
+    <article class="research-card">
+      <h3 class="research-card-title">Improving the Methods of Iris Recognition In Less Cooperative Environments</h3>
+      <p class="research-card-topic"><strong>Saad Kabir Uddin</strong>, Sim Hiew Moi</p>
+      <p class="research-card-topic">
+        <em>UTM Computing Proceedings: Innovations in Computing Technology and Applications</em><br>
+        Vol. 6, pp. 71–76, 2024
+      </p>
+      <span class="tech-tag publication-type">Proceedings Paper</span>
+      <div class="publication-links">
+        <a class="research-link" href="https://comp.utm.my/proceeding/wp-content/uploads/sites/2658/2025/01/12-Saad_Sim-Proc24-Iris.pdf" target="_blank" rel="noopener noreferrer">View Publication ↗</a>
+        <a class="research-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=wttp814AAAAJ&amp;authuser=1&amp;citation_for_view=wttp814AAAAJ:u5HHmVD_uO8C" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
+      </div>
+    </article>
+    <article class="research-card">
+      <h3 class="research-card-title">Enhancing Iris Recognition in Less Cooperative Environments</h3>
+      <p class="research-card-topic">Pang Yee Yong, <strong>Saad Kabir Uddin</strong>, Sim Hiew Moi</p>
+      <p class="research-card-topic">
+        <em>Frontiers in Image Processing and Computer Vision</em><br>
+        Chapter 4, pp. 47–60<br>
+        UTM Press, 2025
+      </p>
+      <span class="tech-tag publication-type">Book Chapter</span>
+      <div class="publication-links">
+        <a class="research-link" href="https://epress.utm.my/editedbook/catalog/view/229/585/6657" target="_blank" rel="noopener noreferrer">View Publication ↗</a>
+        <a class="research-link" href="https://epress.utm.my/editedbook/catalog/book/229" target="_blank" rel="noopener noreferrer">View Book ↗</a>
+        <a class="research-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=wttp814AAAAJ&amp;authuser=1&amp;citation_for_view=wttp814AAAAJ:u-x6o8ySG0sC" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
+      </div>
+    </article>
+    </div>
+  </div>
 
   <div class="research-block">
     <h2 class="section-label">Research Interests</h2>
@@ -21,10 +55,10 @@
           <div class="research-card-header">
             <div>
               <h3 class="research-card-title">{{ entry.title }}</h3>
-              <p class="research-card-period">{{ entry.period }}</p>
+              <p class="research-card-period"><em>{{ entry.period }}</em></p>
             </div>
           </div>
-          <p class="research-card-topic"><strong>Topic:</strong> {{ entry.topic }}</p>
+          <p class="research-card-topic"><strong>Research Topic:</strong> <em>{{ entry.topic }}</em></p>
           @if (entry.highlights?.length) {
             <ul class="research-highlights" aria-label="Research responsibilities">
               @for (highlight of entry.highlights; track highlight) {
