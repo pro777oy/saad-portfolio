@@ -1,10 +1,17 @@
 <section aria-labelledby="references-heading">
   <h1 id="references-heading" class="page-title">References</h1>
 
+  <h2 class="section-label">Academic References</h2>
   <div class="references-grid">
     @for (ref of references(); track ref.email) {
       <article class="reference-card" [attr.aria-label]="ref.name">
         <p class="ref-name">{{ ref.name }}</p>
+        @if (ref.name === 'Dr. Sim Hiew Moi') {
+          <p class="ref-title">Research Supervisor</p>
+        }
+        @if (ref.name === 'Dr. Izyan Izzati binti Kamsani') {
+          <p class="ref-title">Internship Supervisor</p>
+        }
         <p class="ref-title">{{ ref.title }}</p>
         <p class="ref-dept">{{ ref.department }}</p>
         <p class="ref-institution">{{ ref.institution }}</p>
@@ -20,6 +27,19 @@
         </p>
       </article>
     }
+  </div>
+  <h2 class="section-label">Professional References</h2>
+  <div class="references-grid">
+    <article class="reference-card" aria-label="Mohammed Ziaul Hoque Zilani">
+      <p class="ref-name">Mohammed Ziaul Hoque Zilani</p>
+      <p class="ref-title">Head of IT</p>
+      <p class="ref-institution">The Dhaka Mercantile Co-operative Bank Ltd. (DMCB)</p>
+      <p class="ref-contact">
+        <a href="mailto:zia.zilani@dmcbl.com" aria-label="Email Mohammed Ziaul Hoque Zilani">
+          <span aria-hidden="true">✉️</span> zia.zilani@dmcbl.com
+        </a>
+      </p>
+    </article>
   </div>
 </section>
 
