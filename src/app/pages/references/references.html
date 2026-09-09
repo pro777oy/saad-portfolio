@@ -6,6 +6,9 @@
     @for (ref of references(); track ref.email) {
       <article class="reference-card" [attr.aria-label]="ref.name">
         <p class="ref-name">{{ ref.name }}</p>
+        @if (ref.name === 'Dr. Ruhaidah binti Samsudin') {
+          <p class="ref-title">AI Course Instructor</p>
+        }
         @if (ref.name === 'Dr. Sim Hiew Moi') {
           <p class="ref-title">Research Supervisor</p>
         }
