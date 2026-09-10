@@ -65,7 +65,7 @@
   display: inline-flex;
   flex-direction: column;
   min-width: 0;
-  flex-shrink: 0;
+  flex-shrink: 1;
   color: inherit;
   text-decoration: none;
   border-radius: var(--radius-sm);
@@ -202,6 +202,9 @@ nav {
 @media (max-width: 64rem) {
   .site-header-inner {
     display: block;
+    max-height: 100dvh;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
   }
@@ -212,7 +215,6 @@ nav {
 
   .nav-toggle {
     display: inline-flex;
-    position: relative;
     flex-shrink: 0;
   }
 
@@ -235,13 +237,10 @@ nav {
     gap: 0.35rem;
   }
 
-  .nav-list li {
-    width: 100%;
-  }
-
   .nav-list a {
     width: 100%;
-    justify-content: flex-start;
+    min-height: 2.75rem;
+    white-space: normal;
     padding: 0.7rem 0.85rem;
   }
 
@@ -259,6 +258,10 @@ nav {
 @media (max-width: 30rem) {
   .site-header-inner {
     padding-inline: var(--layout-gutter-mobile);
+  }
+
+  .site-header-top {
+    gap: 0.5rem;
   }
 
   .main-content {

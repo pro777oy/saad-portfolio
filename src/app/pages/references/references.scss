@@ -91,6 +91,7 @@ section {
 
   a {
     display: inline-flex;
+    max-width: 100%;
     align-items: center;
     gap: 0.35rem;
     color: var(--color-primary);

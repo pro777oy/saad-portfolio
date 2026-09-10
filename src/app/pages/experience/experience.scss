@@ -123,6 +123,11 @@ section {
 }
 
 @media (max-width: 40rem) {
+  .job-header {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
   .timeline::before {
     left: 0.42rem;
   }

@@ -29,6 +29,7 @@
         <button
           type="button"
           class="nav-toggle"
+          #menuToggle
           [class.is-open]="menuOpen()"
           [attr.aria-expanded]="menuOpen()"
           [attr.aria-label]="menuToggleLabel()"
@@ -49,6 +50,7 @@
         id="primary-navigation"
         aria-label="Primary navigation"
         [class.mobile-nav-open]="menuOpen()"
+        (keydown.escape)="closeMenu(); menuToggle.focus()"
       >
         <ul class="nav-list">
           @for (item of navItems(); track item.path) {
@@ -56,6 +58,7 @@
               <a
                 [routerLink]="item.path"
                 [routerLinkActive]="'active-link'"
+                ariaCurrentWhenActive="page"
                 [routerLinkActiveOptions]="{ exact: item.path === '/' }"
                 (click)="closeMenu()"
               >
