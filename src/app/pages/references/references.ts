@@ -14,7 +14,6 @@ export class ReferencesPage {
       title: 'Senior Lecturer',
       department: 'Faculty of Computing',
       institution: 'Universiti Teknologi Malaysia',
-      phone: '07-5538821',
       email: 'hiewmoi@utm.my'
     },
     {
@@ -22,7 +21,6 @@ export class ReferencesPage {
       title: 'Senior Lecturer',
       department: 'Faculty of Computing',
       institution: 'Universiti Teknologi Malaysia',
-      phone: '07-5532201',
       email: 'ruhaidah@utm.my'
     },
     {
@@ -30,7 +28,6 @@ export class ReferencesPage {
       title: 'Senior Lecturer',
       department: 'Faculty of Computing',
       institution: 'Universiti Teknologi Malaysia',
-      phone: '07-5532201',
       email: 'izyanizzati@utm.my'
     }
   ]);

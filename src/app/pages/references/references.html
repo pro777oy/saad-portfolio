@@ -19,11 +19,6 @@
         <p class="ref-dept">{{ ref.department }}</p>
         <p class="ref-institution">{{ ref.institution }}</p>
         <p class="ref-contact">
-          <a [href]="'tel:' + ref.phone" [attr.aria-label]="'Call ' + ref.name">
-            <span aria-hidden="true">📞</span> {{ ref.phone }}
-          </a>
-        </p>
-        <p class="ref-contact">
           <a [href]="'mailto:' + ref.email" [attr.aria-label]="'Email ' + ref.name">
             <span aria-hidden="true">✉️</span> {{ ref.email }}
           </a>
