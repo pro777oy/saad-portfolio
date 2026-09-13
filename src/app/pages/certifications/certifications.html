@@ -7,7 +7,9 @@
         <article class="certification-card">
           <h2 class="cert-name">{{ certification.name }}</h2>
           <p class="cert-issuer">{{ certification.issuer }}</p>
-          <p class="cert-issued">Issued: {{ certification.issuedOn }}</p>
+          @if (certification.issuedOn) {
+            <p class="cert-issued">Issued: {{ certification.issuedOn }}</p>
+          }
 
           @if (certification.credentialId) {
             <p class="cert-id"><strong>Credential ID:</strong> {{ certification.credentialId }}</p>
@@ -38,4 +40,3 @@
     <p class="empty-state">No certifications added yet.</p>
   }
 </section>
-
