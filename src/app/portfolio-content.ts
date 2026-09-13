@@ -48,7 +48,7 @@ export type ResearchExperience = {
 export type Certification = {
   readonly name: string;
   readonly issuer: string;
-  readonly issuedOn?: string;
+  readonly issuedOn: string;
   readonly credentialId?: string;
   readonly credentialUrl?: string;
   readonly skills?: readonly string[];
@@ -119,10 +119,6 @@ export const portfolioContent: PortfolioContent = {
     },
   ],
   certifications: [
-    {
-      name: 'Machine Learning Specialization',
-      issuer: 'DeepLearning.AI and Stanford Online',
-    },
     {
       name: 'Supervised Machine Learning: Regression and Classification',
       issuer: 'DeepLearning.AI and Stanford Online (via Coursera)',
