@@ -120,6 +120,12 @@ export const portfolioContent: PortfolioContent = {
   ],
   certifications: [
     {
+      name: 'Supervised Machine Learning: Regression and Classification',
+      issuer: 'DeepLearning.AI and Stanford Online (via Coursera)',
+      issuedOn: 'September 13, 2026',
+      credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/V6G2JTT5YZ3D',
+    },
+    {
       name: 'Foundations of Coding Back-End',
       issuer: 'Microsoft (via Coursera)',
       issuedOn: 'March 9, 2026',
