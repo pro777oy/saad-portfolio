@@ -134,6 +134,10 @@ export const portfolioContent: PortfolioContent = {
   ],
   skills: [
     {
+      name: 'English — IELTS',
+      items: ['Listening: 8.5', 'Reading: 8.5', 'Writing: 7', 'Speaking: 6.5'],
+    },
+    {
       name: 'Programming',
       items: ['C#', 'Python', 'C++', 'JavaScript', 'TypeScript', 'Rust', 'Go'],
     },
@@ -249,6 +253,7 @@ export const portfolioContent: PortfolioContent = {
   ],
   futureResearchAreas: ['Computer Vision', 'Software Engineering', 'Distributed AI Systems'],
   links: [
+    { label: 'ORCID', href: 'https://orcid.org/0009-0005-3966-5020' },
     { label: 'GitHub', href: 'https://github.com/pro777oy' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/saadkabiruddin/' },
     { label: 'Google Scholar', href: 'https://scholar.google.com/citations?user=wttp814AAAAJ&hl=en&authuser=1' },
