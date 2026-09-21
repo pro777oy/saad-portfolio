@@ -135,7 +135,7 @@ export const portfolioContent: PortfolioContent = {
   skills: [
     {
       name: 'English — IELTS',
-      items: ['Listening: 8.5', 'Reading: 8.5', 'Writing: 7', 'Speaking: 6.5'],
+      items: ['Overall: 7.5', 'Listening: 8.5', 'Reading: 8.5', 'Writing: 7', 'Speaking: 6.5'],
     },
     {
       name: 'Programming',
