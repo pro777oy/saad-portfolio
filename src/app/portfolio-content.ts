@@ -75,10 +75,10 @@ export type PortfolioContent = {
 
 export const portfolioContent: PortfolioContent = {
   name: 'Saad Kabir Uddin',
-  title: 'Software Engineer | Computer Vision & Machine Learning Enthusiast',
+  title: 'Software Engineer | Reliable Software & ML Systems',
   intro:
     'I design and build scalable full-stack applications, focusing on clean architecture and maintainable systems.',
-  bio: 'I am a software engineer specializing in full-stack web development and building reliable, user-focused applications. I enjoy solving complex problems and continuously improving system design. Alongside my engineering work, I have a strong interest in AI and computer vision research, particularly in applying intelligent techniques to real-world challenges.',
+  bio: 'I build enterprise applications with C#, ASP.NET, Angular, and SQL Server, focusing on reliable business logic, databases, and maintainable software. My research interests center on Software Engineering for AI (SE4AI): learning how to test, deploy, and monitor ML-enabled applications. My iris-recognition publications and machine-learning projects provide a foundation for continued work in Computer Vision. I am also interested in AI-assisted software development.',
   education: {
     period: 'March 2020 - March 2024',
     degree: 'Bachelor of Computer Science (BSc)',
@@ -91,16 +91,16 @@ export const portfolioContent: PortfolioContent = {
     thesis: 'Improving the Methods of Iris Recognition in Less Cooperative Environments',
   },
   researchInterests: [
+    'Software Engineering for AI (SE4AI)',
+    'Reliable ML Systems',
+    'ML Testing, Deployment & Monitoring',
+    'Software Architecture & MLOps',
     'Computer Vision',
-    'Image Segmentation',
-    'Biometric Recognition',
-    'Deep Learning',
-    'Software Engineering',
-    'AI Systems',
-    'ML Systems',
+    'Image Segmentation & Biometric Recognition',
+    'AI for Software Engineering (AI4SE)',
   ],
   researchInterestsSummary:
-    'My research interests are primarily in Computer Vision and Software Engineering, with a focus on robust image segmentation, biometric recognition, deep learning, and the design of reliable AI-enabled software systems. I am particularly interested in research that connects machine learning with scalable software architectures, model deployment, system reliability, and real-world production environments. Drawing on my background in software engineering, I aim to explore methods for building intelligent systems that are not only accurate, but also maintainable, efficient, and practical to deploy.',
+    'My primary research direction is SE4AI: applying software engineering methods to reliable ML-enabled applications, with an emphasis on testing, deployment, monitoring, architecture, and model/version management. My enterprise software experience motivates this direction, while my iris-recognition research and ML projects provide a foundation for learning to integrate models into real applications. Computer Vision remains an active interest, particularly robust image segmentation and biometric recognition. My AI4SE interests include AI-assisted testing, bug detection, fault localization, and program repair.',
   featuredResearch: 'Improving the Methods of Iris Recognition in Less Cooperative Environments',
   researchExperience: [
     {
@@ -251,7 +251,7 @@ export const portfolioContent: PortfolioContent = {
       ],
     },
   ],
-  futureResearchAreas: ['Computer Vision', 'Software Engineering', 'Distributed AI Systems'],
+  futureResearchAreas: ['Testing and Reliability of ML Systems', 'Model Deployment, Monitoring & Version Management', 'Architecture for ML-enabled Applications', 'Robust Computer Vision Applications', 'AI-assisted Software Testing & Program Repair'],
   links: [
     { label: 'ORCID', href: 'https://orcid.org/0009-0005-3966-5020' },
     { label: 'GitHub', href: 'https://github.com/pro777oy' },

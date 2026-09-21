@@ -2,6 +2,18 @@
   <h1 id="research-heading" class="page-title">Research &amp; Publications</h1>
 
   <div class="research-block">
+    <h2 class="section-label">Research Interests</h2>
+    <div class="research-interest-box">
+      <p class="research-summary">{{ content().researchInterestsSummary }}</p>
+      <div class="interest-tags" aria-label="Research interest areas">
+        @for (interest of content().researchInterests; track interest) {
+          <span class="interest-tag">{{ interest }}</span>
+        }
+      </div>
+    </div>
+  </div>
+
+  <div class="research-block">
     <h2 class="section-label">Publications</h2>
     <div class="research-list">
     <article class="research-card">
@@ -32,18 +44,6 @@
         <a class="research-link" href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=wttp814AAAAJ&amp;authuser=1&amp;citation_for_view=wttp814AAAAJ:u-x6o8ySG0sC" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>
       </div>
     </article>
-    </div>
-  </div>
-
-  <div class="research-block">
-    <h2 class="section-label">Research Interests</h2>
-    <div class="research-interest-box">
-      <p class="research-summary">{{ content().researchInterestsSummary }}</p>
-      <div class="interest-tags" aria-label="Research interest areas">
-        @for (interest of content().researchInterests; track interest) {
-          <span class="interest-tag">{{ interest }}</span>
-        }
-      </div>
     </div>
   </div>
 
