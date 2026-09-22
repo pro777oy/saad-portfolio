@@ -77,8 +77,8 @@ export const portfolioContent: PortfolioContent = {
   name: 'Saad Kabir Uddin',
   title: 'Software Engineer | Reliable Software & ML Systems',
   intro:
-    'I design and build scalable full-stack applications, focusing on clean architecture and maintainable systems.',
-  bio: 'I build enterprise applications with C#, ASP.NET, Angular, and SQL Server, focusing on reliable business logic, databases, and maintainable software. My research interests center on Software Engineering for AI (SE4AI): learning how to test, deploy, and monitor ML-enabled applications. My iris-recognition publications and machine-learning projects provide a foundation for continued work in Computer Vision. I am also interested in AI-assisted software development.',
+    'I build full-stack applications with a focus on practical, maintainable software.',
+  bio: 'I work with C#, ASP.NET, Angular, and SQL Server to build enterprise applications and solve backend, database, and integration problems. I am interested in Software Engineering for AI (SE4AI), especially how ML applications can be tested, deployed, and maintained. My research background includes iris recognition and machine-learning projects. I am also interested in tools that help developers write and test software.',
   education: {
     period: 'March 2020 - March 2024',
     degree: 'Bachelor of Computer Science (BSc)',
@@ -146,7 +146,7 @@ export const portfolioContent: PortfolioContent = {
       items: ['ASP.NET Core', 'ASP.NET MVC', 'ASP.NET Framework', 'Angular', 'HTML', 'CSS', 'JWT'],
     },
     {
-      name: 'Machine Learning / Computer Vision',
+      name: 'Machine Learning',
       items: ['PyTorch', 'OpenCV', 'scikit-learn', 'Albumentations', 'NumPy', 'Pandas', 'Matplotlib'],
     },
     {

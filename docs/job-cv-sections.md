@@ -37,6 +37,6 @@ September 2023 – February 2024
 
 **Programming:** C#, Python, C++, JavaScript, TypeScript, Rust, Go  
 **Backend & Web:** ASP.NET Core, ASP.NET MVC, ASP.NET Framework, Angular, HTML, CSS, JWT  
-**Machine Learning / Computer Vision:** PyTorch, OpenCV, scikit-learn, Albumentations, NumPy, Pandas, Matplotlib  
+**Machine Learning:** PyTorch, OpenCV, scikit-learn, Albumentations, NumPy, Pandas, Matplotlib  
 **Databases:** SQL Server, PostgreSQL, MySQL  
 **Tools & Platforms:** Git, Linux (Ubuntu), AWS, Jira, DBeaver, SQL Server Management Studio, Crystal Reports, Unity 2D  
