@@ -42,11 +42,6 @@ export const routes: Routes = [
 	loadComponent: () => import('./pages/contact/contact').then((m) => m.ContactPage)
   },
   {
-	path: 'references',
-	title: 'References | Saad Kabir Uddin',
-	loadComponent: () => import('./pages/references/references').then((m) => m.ReferencesPage)
-  },
-  {
 	path: '**',
 	redirectTo: ''
   }

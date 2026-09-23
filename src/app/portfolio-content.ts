@@ -77,8 +77,8 @@ export const portfolioContent: PortfolioContent = {
   name: 'Saad Kabir Uddin',
   title: 'Software Engineer | Reliable Software & ML Systems',
   intro:
-    'I build full-stack applications with a focus on practical, maintainable software.',
-  bio: 'I work with C#, ASP.NET, Angular, and SQL Server to build enterprise applications and solve backend, database, and integration problems. I am interested in Software Engineering for AI (SE4AI), especially how ML applications can be tested, deployed, and maintained. My research background includes iris recognition and machine-learning projects. I am also interested in tools that help developers write and test software.',
+    'I build web applications and work mainly on backend and database problems.',
+  bio: 'I use C#, ASP.NET, Angular, and SQL Server in my current software engineering role. Before that, I researched iris recognition during my degree and worked on two machine learning projects. I am interested in how to test and maintain ML-based software, as well as how AI tools can help developers.',
   education: {
     period: 'March 2020 - March 2024',
     degree: 'Bachelor of Computer Science (BSc)',
@@ -100,7 +100,7 @@ export const portfolioContent: PortfolioContent = {
     'AI for Software Engineering (AI4SE)',
   ],
   researchInterestsSummary:
-    'My primary research direction is SE4AI: applying software engineering methods to reliable ML-enabled applications, with an emphasis on testing, deployment, monitoring, architecture, and model/version management. My enterprise software experience motivates this direction, while my iris-recognition research and ML projects provide a foundation for learning to integrate models into real applications. Computer Vision remains an active interest, particularly robust image segmentation and biometric recognition. My AI4SE interests include AI-assisted testing, bug detection, fault localization, and program repair.',
+    'I want to study how ML-based applications are tested, deployed, monitored, and maintained. My software engineering work has made me interested in these questions, while my iris-recognition research and ML projects have given me experience with the models themselves. I am also interested in computer vision and in AI tools for software testing and debugging.',
   featuredResearch: 'Improving the Methods of Iris Recognition in Less Cooperative Environments',
   researchExperience: [
     {
@@ -109,12 +109,10 @@ export const portfolioContent: PortfolioContent = {
       topic: 'Improving the Methods of Iris Recognition in Less Cooperative Environments',
       tools: ['Python', 'PyTorch', 'OpenCV', 'scikit-learn', 'Albumentations', 'Matplotlib'],
       highlights: [
-        'Conducted undergraduate research on improving iris recognition under non-cooperative conditions, including blur, occlusion, illumination variation, and other image degradations.',
-        'Reviewed literature on iris recognition, biometric systems, image preprocessing, and computer vision techniques.',
-        'Worked with iris image datasets and performed preprocessing, segmentation, and experimental evaluation.',
-        'Investigated methods for improving iris recognition performance under challenging imaging conditions.',
-        'Analyzed experimental results and compared the performance of different approaches.',
-        'Research subsequently contributed to publications in UTM Computing Proceedings and an edited book published by UTM Press.',
+        'Studied iris recognition with blurred, occluded, and unevenly lit images.',
+        'Reviewed work on iris recognition, biometrics, image preprocessing, and computer vision.',
+        'Preprocessed iris images, ran segmentation experiments, and compared results under degraded imaging conditions.',
+        'This work contributed to a UTM Computing Proceedings paper and a UTM Press book chapter.',
       ],
     },
   ],
@@ -171,7 +169,7 @@ export const portfolioContent: PortfolioContent = {
     {
       title: 'Deep Learning with PyTorch Image Segmentation',
       description:
-        'Developed a semantic segmentation pipeline using U-Net with an EfficientNet-B0 encoder for accurate pixel-wise classification.',
+        'Built a semantic segmentation pipeline with U-Net and an EfficientNet-B0 encoder.',
       technologies: ['Python', 'PyTorch', 'Albumentations', 'OpenCV'],
       features: [
         'Set up GPU runtime and trained for 25 epochs',
@@ -187,7 +185,7 @@ export const portfolioContent: PortfolioContent = {
     {
       title: 'Thalassemia Prediction with Machine Learning',
       description:
-        'Developed a machine learning model to predict thalassemia risk based on clinical and diagnostic features, following an end-to-end ML workflow.',
+        'Explored thalassemia risk prediction using clinical and diagnostic features.',
       technologies: ['Python', 'PyTorch', 'scikit-learn', 'Matplotlib', 'Pandas', 'NumPy'],
       features: [
         'Data preprocessing and feature preparation workflow',
@@ -202,7 +200,7 @@ export const portfolioContent: PortfolioContent = {
     {
       title: 'Task Management Tool',
       description:
-        'Developed a collaborative web application for planning, assigning, and tracking software development tasks, built to explore component-based architecture using Angular.',
+        'Built an Angular app for creating, assigning, and tracking tasks with a team.',
       technologies: ['Angular'],
       features: [
         'Implemented task creation, assignment, and tracking functionality',
@@ -221,13 +219,13 @@ export const portfolioContent: PortfolioContent = {
       role: 'Senior Technical Officer (Software Engineer)',
       period: 'November 2024 - Present',
       responsibilities: [
-        "Designed the database schema and developed the Case Management Application (CMA), deploying it to the organisation's server.",
-        'Developed banking application functionality with ASP.NET Core and ASP.NET MVC, and managed SQL Server databases.',
-        'Designed and developed Core Banking System (CBS) modules and implemented transactional business logic.',
-        'Designed and implemented the Member Transfer module from the ground up.',
-        'Contributed to the development of Cheque Book Management functionality and a reconciliation engine.',
-        'Contributed to authentication and authorization functionality in the Auth Gateway.',
-        'Designed Crystal Reports and integrated them into the application codebase.',
+        'Designed the database schema for the Case Management Application (CMA), then built and deployed it.',
+        'Built application features with ASP.NET Core and ASP.NET MVC and worked with SQL Server databases.',
+        'Built Core Banking System (CBS) modules and implemented transaction logic.',
+        'Built the Member Transfer module from scratch.',
+        'Contributed to Cheque Book Management and a reconciliation engine.',
+        'Worked on authentication and authorization in the Auth Gateway.',
+        'Created Crystal Reports and integrated them into the application.',
       ],
     },
     {

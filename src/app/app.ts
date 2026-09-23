@@ -40,8 +40,7 @@ export class App {
     { label: 'Certifications', path: '/certifications' },
     { label: 'Projects', path: '/projects' },
     { label: 'Research & Publications', path: '/research' },
-    { label: 'Contact', path: '/contact' },
-    { label: 'References', path: '/references' }
+    { label: 'Contact', path: '/contact' }
   ]);
 
   readonly menuToggleLabel = computed(() =>
