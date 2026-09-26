@@ -33,10 +33,21 @@
               {{ project.projectLink.label }}
               <span aria-hidden="true">↗</span>
             </a>
+            @if (project.secondaryLink) {
+              <a
+                class="project-link"
+                [href]="project.secondaryLink.href"
+                target="_blank"
+                rel="noopener noreferrer"
+                [attr.aria-label]="project.secondaryLink.label + ' for ' + project.title"
+              >
+                {{ project.secondaryLink.label }}
+                <span aria-hidden="true">↗</span>
+              </a>
+            }
           </div>
         }
       </article>
     }
   </div>
 </section>
-

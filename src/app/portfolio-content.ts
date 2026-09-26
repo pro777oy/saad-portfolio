@@ -14,6 +14,7 @@ export type PortfolioProject = {
   readonly technologies: readonly string[];
   readonly features: readonly string[];
   readonly projectLink?: SocialLink;
+  readonly secondaryLink?: SocialLink;
 };
 
 export type WorkExperience = {
@@ -210,6 +211,24 @@ export const portfolioContent: PortfolioContent = {
       projectLink: {
         label: 'Project Link',
         href: 'https://pro777oy.github.io/easytask/',
+      },
+    },
+    {
+      title: 'DeliveryDash',
+      description:
+        'Built a browser-based 2D delivery game in Unity and C#.',
+      technologies: ['Unity 2D', 'C#', 'WebGL'],
+      features: [
+        'Implemented player controls, collision-based interactions, delivery mechanics, and game-state logic',
+        'Built and deployed the WebGL application through GitHub Pages',
+      ],
+      projectLink: {
+        label: 'GitHub',
+        href: 'https://github.com/pro777oy/DeliveryDash',
+      },
+      secondaryLink: {
+        label: 'Live Demo',
+        href: 'https://pro777oy.github.io/DeliveryDash/',
       },
     },
   ],
