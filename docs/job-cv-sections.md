@@ -15,13 +15,13 @@ November 2024 - Present
 - Contributed to authentication and authorization functionality in the Auth Gateway.
 - Designed Crystal Reports and integrated them into the application codebase.
 
-### Intern .NET Developer (Training Program)
+### .NET Development Training Program
 
 **Itransition: Software Development Company (Remote)**  
 September 2024 – October 2024
 
 - Developed and integrated email/password authentication in C#, implementing password hashing and salting, SHA-256/SHA-512 hashing features, and JWT-based authentication and session management.
-- Built Angular frontend components and user interfaces, and implemented MySQL data storage and retrieval for authentication systems.
+- Built Angular frontend components and user interfaces, and implemented data storage and retrieval for authentication systems.
 
 ### Software Developer Intern
 
@@ -38,5 +38,6 @@ September 2023 – February 2024
 **Programming:** C#, Python, C++, JavaScript, TypeScript, Rust, Go  
 **Backend & Web:** ASP.NET Core, ASP.NET MVC, ASP.NET Framework, Angular, HTML, CSS, JWT  
 **Machine Learning:** PyTorch, OpenCV, scikit-learn, Albumentations, NumPy, Pandas, Matplotlib  
-**Databases:** SQL Server, PostgreSQL, MySQL  
+**Databases:** SQL Server, PostgreSQL
+
 **Tools & Platforms:** Git, Linux (Ubuntu), AWS, Jira, DBeaver, SQL Server Management Studio, Crystal Reports, Unity 2D  

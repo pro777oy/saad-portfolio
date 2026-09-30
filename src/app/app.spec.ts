@@ -62,6 +62,6 @@ describe('App', () => {
     const brandHomeLink = compiled.querySelector('.brand-home-link') as HTMLAnchorElement | null;
     expect(brandHomeLink?.textContent).toContain('Saad Kabir Uddin');
     expect(brandHomeLink?.getAttribute('href')).toBe('/');
-    expect(compiled.querySelectorAll('.nav-list a').length).toBe(8);
+    expect(compiled.querySelectorAll('.nav-list a').length).toBe(7);
   });
 });
