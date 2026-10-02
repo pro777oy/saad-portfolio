@@ -88,7 +88,7 @@ export const portfolioContent: PortfolioContent = {
     location: 'Johor, Malaysia',
     cgpa: '3.41/4.00',
     last60CreditsGpa: '3.54/4.00',
-    achievements: ["Dean's List award in 3 semesters"],
+    achievements: ["Dean's List award in 2 semesters"],
     thesis: 'Improving the Methods of Iris Recognition in Less Cooperative Environments',
   },
   researchInterests: [
