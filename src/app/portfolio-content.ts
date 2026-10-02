@@ -243,15 +243,15 @@ export const portfolioContent: PortfolioContent = {
   workExperience: [
     {
       company: 'Dhaka Mercantile Co-operative Bank Ltd.',
-      role: 'Senior Technical Officer (Software Engineer)',
+      role: 'Software Engineer (Senior Technical Officer)',
       period: 'November 2024 - Present',
       responsibilities: [
-        'Designed the database schema for the Case Management Application (CMA), then built and deployed it.',
-        'Built application features with ASP.NET Core and ASP.NET MVC and worked with SQL Server databases.',
-        'Built Core Banking System (CBS) modules and implemented transaction logic.',
-        'Built the Member Transfer module from scratch.',
-        'Contributed to Cheque Book Management and a reconciliation engine.',
-        'Worked on authentication and authorization in the Auth Gateway.',
+        'Developed Core Banking System (CBS) modules with transactional business logic and data-integrity workflows for financial operations.',
+        'Designed the database schema and backend architecture for the Case Management Application (CMA), then developed and deployed the system.',
+        'Built Member Transfer from scratch and contributed to Cheque Book Management and a reconciliation engine for reliable financial processing.',
+        'Developed and maintained enterprise applications with C#, ASP.NET Core, ASP.NET MVC, Angular, and SQL Server, using modular design and separation of concerns to improve maintainability.',
+        'Contributed authentication, authorization, secure access control, and identity-related workflows to the Auth Gateway.',
+        'Worked on software reliability, data validation, access control, and production issue resolution across enterprise banking applications.',
         'Created Crystal Reports and integrated them into the application.',
       ],
     },
