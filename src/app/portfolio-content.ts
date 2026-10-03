@@ -31,7 +31,6 @@ export type EducationSummary = {
   readonly institution: string;
   readonly location: string;
   readonly cgpa: string;
-  readonly last60CreditsGpa: string;
   readonly achievements: readonly string[];
   readonly thesis: string;
 };
@@ -76,10 +75,10 @@ export type PortfolioContent = {
 
 export const portfolioContent: PortfolioContent = {
   name: 'Saad Kabir Uddin',
-  title: 'Software Engineer | Software Engineering & AI4SE',
+  title: 'Software Engineer | Software Engineering, AI4SE & SE4AI',
   intro:
     'I build web applications and work mainly on backend and database problems.',
-  bio: 'I use C#, ASP.NET, Angular, and SQL Server in my current software engineering role. Before that, I researched iris recognition during my degree and worked on two machine learning projects. My intended PhD direction is Software Engineering, especially AI4SE, alongside Software Security and AI for Security.',
+  bio: 'I use C#, ASP.NET, Angular, and SQL Server in my current software engineering role. Before that, I researched iris recognition during my degree and worked on two machine learning projects. My primary research interests are Software Engineering, AI for Software Engineering (AI4SE), Software Engineering for AI (SE4AI), Software Architecture, Software Security and AI for Security, and Reliable AI-Enabled Software Systems.',
   education: {
     period: 'March 2020 - March 2024',
     degree: 'Bachelor of Computer Science (BSc)',
@@ -87,19 +86,19 @@ export const portfolioContent: PortfolioContent = {
     institution: 'Universiti Teknologi Malaysia (UTM)',
     location: 'Johor, Malaysia',
     cgpa: '3.41/4.00',
-    last60CreditsGpa: '3.54/4.00',
     achievements: ["Dean's List award in 2 semesters"],
     thesis: 'Improving the Methods of Iris Recognition in Less Cooperative Environments',
   },
   researchInterests: [
     'Software Engineering',
     'AI for Software Engineering (AI4SE)',
-    'Software Security and AI for Security',
+    'Software Engineering for AI (SE4AI)',
     'Software Architecture',
-    'Secure and Reliable Software Systems',
+    'Software Security and AI for Security',
+    'Reliable AI-Enabled Software Systems',
   ],
   researchInterestsSummary:
-    'My intended PhD direction is Software Engineering, especially AI for Software Engineering (AI4SE), alongside Software Security and AI for Security. I would like to study AI-assisted testing, debugging, program analysis and repair, and intelligent developer tools, including LLMs for Software Engineering. I am also interested in AI-assisted vulnerability detection, secure-code analysis, and security testing. These are future research interests, supported by my professional software engineering experience; my established academic research background is in Computer Vision / Machine Learning, particularly iris recognition. Reliable AI-enabled software systems remain a secondary adjacent interest.',
+    'My primary research interests are Software Engineering, AI for Software Engineering (AI4SE), Software Engineering for AI (SE4AI), Software Architecture, Software Security and AI for Security, and Reliable AI-Enabled Software Systems. I would like to study AI-assisted testing, debugging, program analysis and repair, and intelligent developer tools, including LLMs for Software Engineering. I am also interested in AI-assisted vulnerability detection, secure-code analysis, and security testing. These are future research interests, supported by my professional software engineering experience; my established academic research background is in Computer Vision / Machine Learning, particularly iris recognition.',
   featuredResearch: 'Improving the Methods of Iris Recognition in Less Cooperative Environments',
   researchExperience: [
     {
@@ -276,7 +275,7 @@ export const portfolioContent: PortfolioContent = {
       ],
     },
   ],
-  futureResearchAreas: ['AI-assisted Software Testing & Program Repair', 'Code Understanding & Intelligent Developer Tools', 'AI-assisted Vulnerability Detection & Secure-Code Analysis', 'LLM-assisted Security Analysis', 'Software Architecture', 'Secure and Reliable Software Systems'],
+  futureResearchAreas: ['AI-assisted Software Testing & Program Repair', 'Code Understanding & Intelligent Developer Tools', 'AI-assisted Vulnerability Detection & Secure-Code Analysis', 'LLM-assisted Security Analysis', 'Software Engineering for AI (SE4AI)', 'Software Architecture', 'Reliable AI-Enabled Software Systems'],
   links: [
     { label: 'ORCID', href: 'https://orcid.org/0009-0005-3966-5020' },
     { label: 'GitHub', href: 'https://github.com/pro777oy' },
